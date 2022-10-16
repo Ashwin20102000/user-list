@@ -7,7 +7,6 @@ import { tableStyle } from '../../utils/style';
 
 const Table = ({users}) => {
   const rows = formatUsersData(users); 
-  console.log('rows', rows,columns)
   return (
     <div style={tableStyle}>
       <div style={{ height: 400, width: '80%' }}>

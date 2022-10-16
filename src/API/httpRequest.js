@@ -11,13 +11,13 @@ export const httpRequest = async ({
   try {
     const response = await axios.request({
       method,
-      url:baseURL,
-      data: body,
+      url:'/',
+      baseURL,
+      data: JSON.stringify(body),
       headers: {
         "Content-Type":  "application/json",
       },
     });
-    console.log('response', response)
     return response;
   } catch (error) {
     throw {

@@ -10,9 +10,15 @@ const usersSlice = createSlice({
       return {
         users: action.payload
       };
+    },
+    addUser:(state,action)=>{
+      return {
+        users: action.payload
+      }
     }
+
   }
 });
 
-export const { fetchData } = usersSlice.actions;
+export const { fetchData , addUser } = usersSlice.actions;
 export default usersSlice.reducer;

@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
     "eslint": "^8.25.0",
     "eslint-plugin-react": "^7.31.10"
   }

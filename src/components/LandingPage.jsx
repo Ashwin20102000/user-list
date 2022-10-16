@@ -17,6 +17,7 @@ const LandingPage = () => {
   const [loader,setLoader] = React.useState(false);
   const dispatch = useDispatch();
   const selector = useSelector(store=>store.users.users.data||[]);
+  console.log('selector', selector)
   const getUsers = (() => {
     try {
       setLoader(true);
