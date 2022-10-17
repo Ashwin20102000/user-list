@@ -45,7 +45,6 @@ const onSubmit = async(data) =>{
     finally{
       setTimeout(()=>{
         setToast(false)
-        setOpen(false)
       },1e3)
     }
   }
