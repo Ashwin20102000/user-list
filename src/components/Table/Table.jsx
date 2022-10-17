@@ -14,7 +14,7 @@ const Table = ({users}) => {
           rows={rows}
           columns={columns}
           pageSize={5}
-          loading={!users && users?.length>0?true:false}
+          loading={users?.length===0?true:false}
           showColumnRightBorder
           disableSelectionOnClick
           rowsPerPageOptions={[5]}
