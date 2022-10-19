@@ -33,7 +33,7 @@ const onSubmit = async(data) =>{
           body: JSON.stringify(data),
       })
       if(res.status>=200 && res.status < 300){
-        dispatch(addUser(data));
+        dispatch({type:keys.ADD_DATA_SAGA,data});
         setMessage({message:"Added User Successfully",variant:"success"})
         setOpen(false);
         reset();

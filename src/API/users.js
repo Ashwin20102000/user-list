@@ -28,7 +28,7 @@ const AddUser = async(data) => {
       return returnData.data;
     }
   } catch (error) {
-    // throw error;
+    throw error;
   }
 }
 
