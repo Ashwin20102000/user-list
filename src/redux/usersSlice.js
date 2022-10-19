@@ -15,7 +15,7 @@ const usersSlice = createSlice({
       return {
         users: action.payload
       }
-    }
+    },
 
   }
 });

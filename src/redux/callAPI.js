@@ -1,4 +1,4 @@
-import Axios  from "axios";
+import Axios  from "axios"
 
 export const  callAPI = async ({ url, method, data }) => {
   return await Axios({
@@ -6,4 +6,4 @@ export const  callAPI = async ({ url, method, data }) => {
     method,
     data
   });
-};
+}
