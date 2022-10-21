@@ -38,3 +38,9 @@ export const formatUsersData = (users) => {
   const res = users.map((user)=>({avatar:(user.avatar),id:user.id,name:user.first_name,email:user.email}));
   return res;
 }
+
+
+export const toCaps = (word) => {
+  if(word)return word.slice(0,1).toUpperCase()+word.slice(1).toLowerCase();
+  return "";
+}
